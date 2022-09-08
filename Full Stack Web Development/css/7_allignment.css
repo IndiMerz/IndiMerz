@@ -1,0 +1,66 @@
+*{
+box-sizing: border-box;
+
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    background-color: aquamarine;
+}
+
+.container{
+    border-radius: 30px;
+    background-color: aqua;
+    width: 600px;
+    border: 5px solid rgb(119, 20, 104);
+    /* margin auto to center element on x axis */
+    margin: 50px auto ;
+
+}
+
+.item{
+    border-radius: 10px;
+    border: 3px solid rgb(8, 92, 83);
+    margin: 10px 9px;
+    padding: 12px 6px;
+} 
+
+#fruit{
+    float: left;
+    width: 46%;
+    background-color: bisque;
+    
+}
+
+#computer{
+    float: right;
+    width: 46%;
+    background-color: bisque;
+    
+}
+
+#stationery{
+    clear: both;
+    background-color: rgb(19, 152, 16);
+} 
+
+#fashion{
+    background-color: rgb(172, 217, 11);
+
+}
+
+/* to align text */
+p, h2{
+    /* text-align: justify; */
+    text-align: center;
+    /* text-align: left; */
+    /* text-align: right; */
+}
+
+h1{
+    color: rgb(20, 9, 102);
+    margin: auto;
+    width: 450px;
+    padding: 30px;
+   
+}

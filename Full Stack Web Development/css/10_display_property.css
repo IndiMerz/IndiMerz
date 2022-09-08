@@ -1,0 +1,34 @@
+header{
+    border: 4px solid rgb(3, 109, 175);
+    width: auto;
+}
+
+img{
+    width: 134px;
+    display: block;
+/* display block takes the whole space, whereas display inline takes only required space*/
+/* by this property we can make any element inline or block respectively */
+    margin: auto;
+}
+
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    text-align: center;
+}
+
+.box{
+    background-color: antiquewhite;
+    border: 3px solid rgb(50, 173, 5);
+    margin: 20px auto;
+    padding: 20px;
+    display: inline-block;
+    /* uses this to adjust width of those elements which is not block element */
+    width: 33%;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+    width: auto;
+}

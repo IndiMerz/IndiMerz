@@ -1,0 +1,27 @@
+/* this is how to write element selector */
+p{
+    color: white;
+    background-color: orangered;
+    border: 2px solid black;
+}
+
+
+/* this is how to write id selector  */
+#secPara{
+    color: aqua;
+    background-color: brown;
+}
+
+
+/* this is how to write class selector */
+.boxA{
+    color:yellow;
+    background-color: darkorchid;
+}
+
+
+/* this is how to write group selector */
+footer, span{
+    color: rgb(62, 42, 101);
+    background-color: beige;
+}

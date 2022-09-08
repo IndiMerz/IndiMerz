@@ -1,0 +1,21 @@
+/* font family (web save fonts) they are preinstalled in operating system */
+#p1{
+    font-family: cursive;
+}
+
+/*font stack (web save fonts) if first font will not available, it will use next, and so on*/
+#p2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* web saved fonts, they are web based, we have to link the font in head of html to use them */
+#p3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;    /* 1/96th of an inch is 1 px, it uses to define size of fonts */
+    line-height: 1.5em;   /* line height uses to give space between lines  */
+}
+
+span{
+    font-weight: bold;
+    font-style: italic;
+}

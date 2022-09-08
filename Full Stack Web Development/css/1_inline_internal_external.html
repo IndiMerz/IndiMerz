@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview Of CSS</title>
+
+    <link rel="stylesheet" href="/css/1_inline_internal_external.css">
+
+    <style>
+        p{
+            color: orangered; background-color: silver;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- this is inline css, in this case, css written in tags, we can add any property odf css in them by writing in tags -->
+
+    <ol style="color:blueviolet; background-color: aqua;">
+        There are 3 ways to style css.
+        <li style="color: green; ">Inline css</li>
+        <li style="color: green; ">Internal css</li>
+        <li style="color: green; ">External css</li>
+    </ol>
+
+    <!-- this is the eg of internal css, css written in <head> tag under <style> -->
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi reprehenderit illum minima nihil dolorum commodi quae fugit nostrum dolore, perspiciatis assumenda, cum sed, mollitia voluptates totam neque in. Soluta, excepturi?</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis sunt quia veniam assumenda laboriosam blanditiis magni ut officia est at.</p>
+
+
+    <!-- this is eg of external css, we have to link external file in <head> tag -->
+
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor officia, perspiciatis labore nemo veritatis ex nobis voluptas deleniti molestias illum tenetur sit dignissimos aliquid possimus alias illo, omnis minus. Illum omnis ratione aut amet quo? Praesentium, maxime dolores. Maxime, nostrum debitis! Doloremque nulla nam voluptas maiores dignissimos voluptatem exercitationem dolorum!</span>
+
+
+    <!-- if more than one css is written for one element, presidence will be taken by the last written css -->
+
+    <!-- to make desired css to take presidence if more than one css is written for one element, enter !important before ; -->
+
+</body>
+</html>

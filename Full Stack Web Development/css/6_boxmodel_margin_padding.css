@@ -1,0 +1,56 @@
+/* this is universal selector, css under this applies on all elements */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* this will make all margin/padding zero to all elements, untill written separately */
+}
+
+
+.container{
+    color: rgb(20, 63, 148);
+    background-color: #d76fff;
+    border: 5px solid rgb(119 13 214);
+    border-radius: 30px;
+    /* padding uses under border */
+    /* padding: 50px; */
+    /* margin uses outside border */
+    /* margin: 50px; */
+
+    /* we can also set margin/padding for top, right, bottom, left like: */
+
+    /* 
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+   
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-left: 60px; 
+    */
+
+    /* we can set margin/padding for top, right, bottom in one line by using this sequence */
+    /* margin: top right bottom left; */
+
+    /*
+    padding: 20px 35px 22px 43px;
+    margin: 20px 35px 22px 43px;
+    */
+
+    /* for giving equal margin/paddind on y and x axis */
+    /* margin: y(top/bottom) x(left/right) */
+
+    padding: 30px 20px;
+    margin: 30px 20px;
+
+    width: 500px;
+
+    box-sizing: border-box;
+}
+
+/* this is body selector, css applies on body in this */
+body{
+    background-color: #026897;
+}

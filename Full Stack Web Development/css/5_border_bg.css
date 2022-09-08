@@ -1,0 +1,63 @@
+#p1{
+    color: rgb(24, 243, 255);
+    background-color: rgb(92, 121, 36);
+    height: 100px;
+    width: 300px;
+
+    border-width: 4px;
+    border-color: rgb(5, 18, 117);
+    border-style: solid;
+
+    /* these 3 can also be written in one line, like */
+
+    border: 8px solid rgb(4, 112, 108);
+
+    border-radius: 15px;
+}
+
+
+#p2{
+    background-color: rgb(34, 220, 149);
+    width: 400px;
+    height: 120px;
+
+    /* to color indivdual border color */
+
+    border-top: 7px solid rgb(69, 7, 144);
+    border-bottom: 8px solid rgb(236, 118, 7);
+    border-right: 12px solid rgb(91, 3, 3);
+    border-left: 6px solid rgb(4, 127, 189);
+    
+    /* to get individual border radius */
+
+    border-top-right-radius: 30px;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 350px;
+    border-bottom-left-radius: 100px;
+}
+
+h2{
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid green;
+}
+
+
+#bgimg{
+    height: 300px;
+    width: 455px;
+
+    /* this is how we can import bg images */
+    background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31');
+    border: 3px solid rgb(8, 58, 157);
+
+    background-repeat: no-repeat;
+    /* use it to not repeat images */
+
+    background-position: center;
+    /* we can use that property to align image position, like top left, bottom right, */
+    /* we can also use px measure, like 21px 14px; and so on */
+
+    color: rgb(11, 29, 191);
+    font-family: lucida;
+}

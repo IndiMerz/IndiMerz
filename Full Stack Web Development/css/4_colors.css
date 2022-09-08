@@ -1,0 +1,15 @@
+/* color by name */
+#p1{
+    color: palevioletred;
+}
+
+/* color by rgb value */
+#p2{
+    color: rgb(46, 46, 179);
+}
+
+/* color by hex value */
+#p3{
+    color: #5e2f40;
+    background-color: #349887;
+}

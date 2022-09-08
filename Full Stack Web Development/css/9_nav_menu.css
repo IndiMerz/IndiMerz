@@ -1,0 +1,41 @@
+.navbar{
+    color: rgb(141, 156, 10);
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+
+}
+
+.navbar ul{
+    overflow: auto;
+    /* when we float elements, they overflows from their parent,to bring it back, we have to use this property */
+}
+
+.navbar li{
+    float: left;
+    list-style: none;
+    padding: 10px 8px;
+}
+
+.navbar li a{
+    padding: 3px 19px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.search{
+    float: right;
+    color: rgb(26, 173, 173);
+    padding: 9px 56px;
+}
+
+.navbar input{
+    border-radius: 10px;
+    border: 3px solid rgb(141, 7, 168);
+    margin: -33px;
+    padding: 4px;
+    width: 120px;
+}
+
+.navbar li a:hover{
+    color: rgb(14, 166, 169);
+}

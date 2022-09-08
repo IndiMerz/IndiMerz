@@ -1,0 +1,46 @@
+.container{
+    border: 3px solid green;
+    background-color: aliceblue;
+    width: 700px;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+a{
+    text-decoration: none;
+    /* to remove underline, etc */
+}
+
+/* 
+a:hover{
+    background-color: bisque;
+}
+button:hover{
+    background-color: rgb(226, 205, 85);
+} 
+*/
+
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid green;
+}
+
+a:visited{
+    color: rgb(143, 9, 127);
+}
+
+a:active{
+    color: rgb(76, 177, 175);
+}
+ 
+.btn{
+    color: rgb(147, 11, 220);
+    background-color: rgb(16, 180, 199);
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    /* to make arrow as hand */
+    font-size: 15px;
+    border-radius: 9px;
+}
+

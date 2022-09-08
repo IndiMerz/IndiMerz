@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- for making form, we have to enter " form " -->
+    <!-- for getting input from user, use "input" tag  -->
+    <!-- <div> tag uses for breaking line, its a block element -->
+
+
+    <h2>HTML Form Demo 1</h2>
+    <hr>
+
+    <form action="backend.php">
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name">
+
+            <!-- "for" and "id" should be same to use lable tag -->
+
+        </div>
+        <br>
+
+        <div>
+            <!-- select tag uses for making drop down menu by adding option tags in it -->
+
+
+            <label for="profession">Profession:</label>
+            <select name="My Profession" id="profession">
+                <!-- selected attribute selects that one as default -->
+                <option value="select" selected>Select Profession</option>
+                <option value="eng">Engineer</option>
+                <option value="doc">Doctor</option>
+                <option value="teacher">Teacher</option>
+                <option value="oth">Other</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+
+        <div>
+            DoB: <input type="date" name="myDoB">
+        </div>
+        <br>
+
+        <div>
+            Experience: <input type="number" name="my experience years">
+        </div>
+        <br>
+
+        <div>
+            Are You Eligible?: <input type="checkbox" name="myEligibility" checked>
+            <!-- by using checked attribute, checkbox will by default checked -->
+        </div>
+        <br>
+
+        <div>
+            Gender:
+            <br>
+            Male <input type="radio" name="myGender">
+            Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender" required>
+            <!-- by using required attribute, it will req to fill -->
+            <!-- when name becomes same, only one opion select from all options, aka "radio" -->
+        </div>
+        <br>
+
+        <div>
+            Write About Yourself: <br>
+            <textarea name="text" cols="30" rows="8"></textarea>
+        </div>
+        <br>
+
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+
+    </form>
+
+
+    <hr>
+
+
+    <h2>HTML Form Demo 2</h2>
+
+    <form action="backend.php">
+
+        <div>
+            <label for="name2">Name</label>
+            <input type="text" name="myName" id="name2">
+        </div>
+        <br>
+        <div>
+            <label for="email2">Email</label>
+            <input type="email" name="myEmail" id="email2">
+        </div>
+        </div>
+        <br>
+        <div>
+            <label for="dos">Submit date</label>
+            <input type="date" name="Date of submit" id="dos">
+
+        </div>
+        <br>
+        <div>
+            <label for="mstatus">Marital Status:</label>
+            <br>
+            Married <input type="radio" name="Marital Status" id="mstatus">
+            UnMarried <input type="radio" name="Marital Status" id="mstatus">
+            Divorced <input type="radio" name="Marital Status" id="mstatus">
+        </div>
+        <br>
+
+        <div>
+            <label for="income">Yearly Income</label>
+            <select name="myIncome" id="income">
+                <option value="low">Select Your Income</option>
+                <option value="low">Less than 100k</option>
+                <option value="mid1">100k to 300k</option>
+                <option value="mid2">300k to 500k</option>
+                <option value="mid3">500k to 1M</option>
+                <option value="high">More than 1M</option>
+            </select>
+
+        </div>
+        <br>
+        <div>
+            <label for="likes">What You Like?</label> <br>
+            Game<input type="checkbox" name="myLikes" id="likes">
+            Movie<input type="checkbox" name="myLikes" id="likes">
+            Shopping<input type="checkbox" name="myLikes" id="likes">
+            Travel<input type="checkbox" name="myLikes" id="likes">
+
+        </div>
+        <br>
+
+        <div>
+            <label for="submit"> </label>
+            <input type="submit" name="Completed" value="Submit It" id="submit">
+        </div>
+
+
+    </form>
+    <hr>
+
+</body>
+
+
+</html>

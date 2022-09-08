@@ -1,0 +1,49 @@
+/* css position: static (default), absolute, relative, fixed, sticky */
+
+#container{
+    border: 5px solid rgb(182, 44, 171);
+    background-color: aqua;
+}
+
+.box{
+    border: 3px solid rgb(153, 21, 43);
+    width: 150px;
+    height: 150px;
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+#box1{
+    /* relative to its normal position */
+    position: absolute;
+    top: 80px;
+    left: 433px;
+}
+
+#box3{
+    /* relative to its parent posotion and will leave a gap in its normal position */
+    position: relative;
+    top: -6px;
+    left: 635px;
+}
+
+#box4{
+    /* position the element relative to the browser window */
+    position: fixed;
+    right: 2px;
+    bottom: 3px;
+} 
+
+#box2{
+    position: sticky;
+    top: 2px;
+}
+
+.para{
+    border: 8px solid rgb(60, 50, 124);
+    margin: 20px;
+    padding: 8px;
+}

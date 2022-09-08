@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entities & Semantic Tags</title>
+</head>
+<body>
+
+    <h1>HTML Entities</h1>
+
+    <!-- entities uses to print reserved characters of html and the words which are not available on keyboard  -->
+
+    <div class="container">
+
+       <li>space between words &nbsp; is given like this in html</li>
+       <li>more space b/w words &nbsp; &nbsp; &nbsp; &nbsp; are given like this in html</li>
+       <li>predefined tag is written like this &lt;p&gt;</li>
+       <li>pound is written like this &pound;</li>
+       <li>copyright is written like this &copy;</li>
+       <li>right arrow is written like this &rAarr;</li>
+       <li>empty is written like this &#8203;</li>
+
+    </div>
+        <!-- no need to learn these entities, we can easily find it on google -->
+
+<hr>
+
+        <h1>Semantic Tags</h1>
+
+        <!-- semantic tags uses to tell search engines about the type of elements, ie header, footer etc -->
+
+      <p>  <details> 
+            <summary>Learn More About Sementic Tags</summary>
+        <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">Click Here</a>
+        </details>
+        </p>
+
+
+        <!-- content under summary shows by dedault, whereas content under details shows when we expan it  -->
+
+        <details>
+            <summary>This is how to make summary and details</summary>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos iure tempore cupiditate, magni ullam quis error facilis, Odio, impedit facere cupiditate asperiores corrupti rem fugit laborum ullam at ducimus magnam officia cumque praesentium fuga quam?
+            </p>
+        </details>
+
+
+
+        <!-- section element uses to define a section of a document, it usually uses to chapters, introduction, news items, contact information -->
+
+        <section>
+            <h1>Section</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum delectus eos mollitia voluptatem unde? Dolores id officiis quia optio reiciendis laboriosam aspernatur doloremque harum, et eaque excepturi quas, quod earum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero voluptas laborum porro ut dolore. Excepturi accusamus quas modi impedit iusto.
+            </p>
+        </section>
+
+
+        <!-- article elements specifies independent, self-contained contents, its usually uses for blog post, forum post, user comment, product cards, newspaper articles -->
+
+        <article>
+            <h3>Article</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto, rerum ratione impedit perspiciatis veritatis quae commodi fugiat animi, cumque fuga deleniti est magnam velit.
+            </p>
+        </article>
+
+
+        <!-- header element represents a container for introductory content or a set of navigational links, it typically contains one or more heading elements (h1-h6), logo or icons, authorship info  -->
+
+        <!-- eg of header of an article -->
+        <article>
+            <header>
+              <h2>This is Header</h2>
+              <p>Lorem ipsum dolor sit amet:</p>
+            </header>
+            <p>WWF's mission is to stop the degradation of our planet's natural environment,
+            and build a future in which humans live in harmony with nature.</p>
+          </article>
+
+
+
+          <!-- footer element defines a footer for a document or section, it typically contains authorship info, copyright info, sitemap, contact info, back to top links, related links -->
+<hr>
+          <footer>
+            <h3>This is footer</h3>
+            <p>Author: Shahbaz Ansari</p>
+            <p><a href="mailto:mail@example.com">mail@example.com</a></p>
+          </footer>
+
+<hr>
+          <!-- nav element defines a set of navigation links -->
+          <nav>
+            <a href="/html/4_list_tables.html">List & Tables</a> |
+            <a href="/html/6_inline_block.html">Inline & Block</a> |
+            <a href="/html/5_forms_input.html">Forms</a> |
+            <a href="/html/3_links_images.html">Links & Images</a>
+          </nav>
+
+<hr>
+          <!-- aside element defines some content aside from the content it is placed in (like a sidebar). aside content should be indirectly related to the surrounding content.-->
+
+          <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+            <aside>
+                <h4>aside</h4>
+                    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+            </aside>
+
+<hr>
+
+        <!-- figure tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc. -->
+
+        <!-- figcaption tag defines a caption of a figure element, the <figcaption> element can be placed as the first or as the last child of a <figure> element. -->
+
+        <!-- The <img> element defines the actual image/illustration. -->
+
+        
+        <h2>Figure & Figcaption</h2>
+
+        <figure>
+            <img src="/Resources/Danny Director.jpeg" width="200" height="200" alt="Danny, Director">
+            <figcaption>Danny, Director</figcaption>
+        </figure>
+
+</body>
+</html>
