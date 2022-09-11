@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    height: 650px;
+    width: 100%;
+    border: 3px solid rgb(8, 238, 215);
+    display: flex;
+    /* by making display flex, container became flex container, and their item becomes flex items */
+
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* default drection is row */
+
+    /* flex-wrap: wrap; */
+    /* wrap allow us to wrap items in small size devices, default is no wrap */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: column-reverse wrap; */
+
+
+    /* justify-content will justify the content in horizontal direction */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    
+    /* align-items will justify the content in vertically direction */
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+    /* align-items: stretch ; */
+
+}
+
+.item{
+    border: 2px solid navy;
+    background-color: beige;
+    margin: 20px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+/* flex properties for a flex items */
+
+#item1{
+    /* order: 4; */
+    /* higher the order, later it shows up in container */
+
+    /* flex-grow: 1; */
+    /* higher the flex grow, more it will expand */
+
+    /* flex-shrink: 30; */
+    /* higher the shrink, more it will shrink */
+
+    /* flex-basis: 200px; */
+    /* when flex direction is set to row, flex basis will control the width */
+    /* when flex direction is set to column, flex basis will control the height */
+
+    /* shorthand to use one 3 flex ptoperties in one line */
+     /* flex: grow shirnk basis; */
+    flex: 2 4 450px;
+    
+}
+
+#item2{
+    /* order: 10; */
+    /* flex-grow: 3; */
+    /* flex-shrink: 22; */
+/* align self uses for aligning items on desired place */
+    align-self: flex-start;
+    align-self: flex-end;
+    align-self: center;
+
+}
+
+#item3{
+    /* order: 1; */
+    /* flex-grow: 5; */
+    /* flex-shrink: 80; */
+
+}
