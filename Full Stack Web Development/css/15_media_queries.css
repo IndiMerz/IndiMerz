@@ -1,0 +1,50 @@
+.box{
+    color: cyan;
+    margin: 20px;
+    padding: 20px;
+    font-size: 60px;
+    display: none;
+    
+}
+
+@media only screen and (max-width:375px){
+    #box1{
+        display: block;
+        background-color: goldenrod;
+        color: black;
+    }
+}
+
+@media only screen and (min-width:376px) and (max-width:390px){
+    #box2{
+        display: block;
+        background-color: blueviolet;
+        color: paleturquoise;
+    }
+}
+
+@media only screen and (min-width:391px) and (max-width:820px){
+    #box3{
+        display: block;
+        background-color: rgb(208, 66, 182);
+        color: azure;
+    }
+}
+
+@media only screen and (min-width:821px) and (max-width:2560px){
+    #box4{
+        display: block;
+        background-color: rgb(49, 183, 15);
+        color: blue;
+    }
+}
+
+@media only screen and (min-width:2561px) and (max-width:3024px){
+    #box5{
+        display: block;
+        background-color: rgb(237, 212, 72);
+        color: black;
+    }
+}
+
+/* we can add "only screen" to media queries to display in color devices only  */
