@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <style>
+
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        #box{
+            display: flex;
+            margin: 10px;
+            height: 30vh;
+            width: 20vw;
+            border: 4px solid greenyellow;
+            background-color: rgb(74, 137, 95);
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+
+            transition-property: background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s;
+
+            /* transition short hand */
+            transition: property duration timing-function delay;
+
+            transition: all 1s ease-in 0s;
+
+        }
+
+    #box:hover{
+        background-color: rgb(51, 124, 172);
+        width: 30vw;
+        /* height: 70vh; */
+        font-size: 5em;
+        border-radius: 1.4em;
+    }
+
+    </style>
+
+
+</head>
+<body>
+
+    <h2>Transition</h2>
+
+    <div class="container">
+        <div id="box">
+            Box1
+        </div>
+        <div id="box">
+            Box2
+        </div>
+        <div id="box">
+            Box3
+        </div>
+    </div>
+    
+</body>
+</html>
