@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables & Custom Properties</title>
+    <style>
+        .box{
+            --primary-color: green;
+            --danger-color: red;
+            border: 2px solid var(--danger-color);
+            width: 20vw;
+            height: 30vh;
+            margin: 20px 10px;
+            padding: 10px 15px;
+            text-align: center;
+            background-color: var(--primary-color);
+
+            /* these variables will apply only on same box */
+            /* to maker universal variables, we have to write variables in :root */
+
+            font-size: var(--font-sz);
+        }
+
+        :root{
+
+            --box-shadow: 2px 2px 4px rgb(83, 143, 150);
+            --color: aliceblue;
+            --font-sz: 3em;
+            --maxw: 850px;
+        }
+
+        .container{
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            box-shadow: var(--box-shadow);
+            background-color: var(--color);
+            max-width: var(--maxw);
+            margin: auto;
+        }
+    
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Demo1</div>
+        <div class="box">Demo2</div>
+        <div class="box">Demo3</div>
+    </div>
+    
+</body>
+</html>
