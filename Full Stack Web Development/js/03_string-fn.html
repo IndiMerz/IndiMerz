@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Functions</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        var str = "this is a string"
+        console.log(str)
+
+        // first occurance of a substring
+        var position = str.indexOf('is');
+        console.log(position)
+
+        // last occurance of a substring
+        position = str.lastIndexOf('is');
+        console.log(position)
+
+        // substring from a string
+        var substr = str.slice(2, 7);
+        var substr = str.substring(3, 9);
+        console.log(substr)
+        // slice can take negative values, but substrings cant
+
+        var substr3 = str.substr(3, 9);
+        console.log(substr3)
+
+
+        // replace function
+        var replaced = str.replace('string', 'sub-string');
+        console.log(str)
+        console.log(replaced)
+
+        // uppercase, lowercase
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+
+
+        var newString = str.concat('this will be added to old string');
+        console.log(newString)
+
+
+        // whitespace
+        var strWithWhiteSpaces = ('    this contains      whitespace    ');
+        console.log(strWithWhiteSpaces)
+        console.log(strWithWhiteSpaces.trim())
+
+        // finding character at
+        var char = str.charAt(3);
+        console.log(char)
+
+        var char = str.charCodeAt(3);
+        console.log(char)
+
+
+        console.log(str[13])
+
+    </script>
+
+</body>
+
+</html>
