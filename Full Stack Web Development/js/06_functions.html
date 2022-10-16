@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Functions</h1>
+
+
+
+    <script>
+
+        function heyy(name, greetText3="greetings from js"){
+            console.log(greetText3 + " " + name)
+            console.log(name + " is nice person")
+        }
+
+
+        let name = "david";
+        let name2 = "alex";
+        let name3 = "smith";
+        let name4 = "andre";
+        let greetText3 = "hello, morning";
+
+        heyy(name, greetText3)
+        heyy(name2)
+        heyy(name3,greetText3)
+        heyy(name4)
+
+
+// return value from funcrion
+
+        function sum(a, b, c){
+            let d = a + b + c;
+            return d;
+            // console.log(sum) (this line will never show, as lines is after return)
+        }
+
+        let rval = sum(2,1,4);
+        console.log(rval)
+        
+
+
+        function product(a, b){
+        let c = a*b;
+        return c;
+        }
+
+        let multiply = product(2,9)
+        console.log(multiply)
+
+
+    </script>
+    
+</body>
+</html>
