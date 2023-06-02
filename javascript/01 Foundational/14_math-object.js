@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Object</title>
-</head>
-<body>
-    <div class="containe">
-        <h2>Maths Object</h2>
-    </div>
 
-
-    <script>
 
         //printing the math object
         let m = Math;
@@ -78,8 +64,3 @@
         let r_50_60 = p+(q-p)*Math.random();
         console.log("The Random no. b/w 50 to 60 is ", r_50_60);
         console.log("The Random no. b/w 50 to 60 is ", Math.round(r_50_60));
-
-
-    </script>
-</body>
-</html>

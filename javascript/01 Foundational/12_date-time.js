@@ -1,44 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Date and Time</title>
-
-    <style>
-        body{
-            background-color: black;
-        }
-
-        .container{
-            padding: 20px;
-            margin: auto;
-            width: 90vw;
-            border: 2px solid blue;
-            text-align: center;
-            background-color: aquamarine;
-            font-size: 30px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
-        }
-        
-        #time{
-            font-weight: bold;
-            color: rgb(122, 3, 196);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-
-    </style>
-</head>
-<body>
-    <div class="container">
-        Current time is <span id="time"></span>
-    </div>
-
-
-    <script>
-
         let now = new Date();
         console.log(now);
 
@@ -79,7 +38,3 @@
          function clock(){
             time.innerHTML = new Date();
          }
-
-    </script>
-</body>
-</html>
