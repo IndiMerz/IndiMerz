@@ -9,6 +9,7 @@ Boolean
 Null
 Undefined
 Symbol
+BigInt
 
 Primitive types are stored directly in memory and are compared by their value. When you assign a primitive value to a variable or pass it as an argument, a copy of the value is created.
 
