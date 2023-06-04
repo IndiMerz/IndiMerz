@@ -1,1 +1,0 @@
-this is vscode and language is typescript
