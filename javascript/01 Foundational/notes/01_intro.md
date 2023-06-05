@@ -63,7 +63,7 @@ JavaScript can be used for various purposes, including:
 > In JavaScript, the console is a powerful tool that allows you to interact with your code and display information while `developing` and `debugging`. The console provides a way to log messages, view errors, and test code snippets directly in the browser or development environment.
 
 ```js
-console.log('helo world');
+console.log('hello world');
 ```
 
 Output:
