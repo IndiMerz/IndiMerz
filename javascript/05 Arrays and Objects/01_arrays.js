@@ -55,7 +55,12 @@ console.log(firstArrEle);  // John
 
 
 // Accessing the Last Array Element
-let lastArrEle = ageName[ageName.length -1];
+let lastArrEle;
+lastArrEle = ageName[ageName.length -1];
+console.log(lastArrEle);  // 35
+
+//shorter way
+lastArrEle = ageName.at(-1);
 console.log(lastArrEle);  // 35
 
 
