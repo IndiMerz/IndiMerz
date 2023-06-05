@@ -1,8 +1,3 @@
-/* Coercion refers to the automatic type conversion that occurs when JavaScript tries to perform operations or evaluations involving values of different data types.
-
-Coercion is often referred to as implicit type conversion.
-
-*/
 
 // 1. String and Number Concatenation:
 let num = 10;

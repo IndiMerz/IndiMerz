@@ -1,11 +1,3 @@
-/*
- Conversion refers to intentionally changing the data type of a value from one type to another using built-in functions or operators provided by JavaScript.
-
- It includes both implicit (coercion) and explicit type conversions.
- 
-*/
-
-
 // Convert String to Number
 let value = '100';
 // Ways to convert

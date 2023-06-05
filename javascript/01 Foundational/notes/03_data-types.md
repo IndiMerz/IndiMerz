@@ -1,29 +1,33 @@
 # Data Types
-> JavaScript has several built-in data types that are used to store and manipulate different kinds of values. Understanding these data types is essential for writing effective JavaScript code. Let's explore the different data types in JavaScript.
+> JavaScript has two main categories of data types: 
+ - **`primitive types`** 
+ - **`reference types`**
+> Understanding these data types is fundamental to writing effective JavaScript code.
+
 
 ## Primitive Types
-> Primitive types are the fundamental or basic data types in JavaScript. They are immutable, meaning their values cannot be changed once they are created. The primitive types in JavaScript are:
+> Primitive types are the fundamental or basic data types in JavaScript. They are `immutable`, meaning their values cannot be changed once they are created. The primitive types in JavaScript are:
 
-- **`String`**: Represents a sequence of characters enclosed in single ('') or double ("") quotes.
+1. **`String`**: Represents a sequence of characters enclosed in `single ('') or double ("") quotes`.
 
-1. **`Number`**: Represents numeric values, including integers and floating-point numbers.
+2. **`Number`**: Represents numeric values, including `integers` and `floating-point numbers`.
 
-2. **`Boolean`**: Represents a logical value of either `true` or `false`.
+3. **`Boolean`**: Represents a logical value of either `true` or `false`.
 
-3. **`Null`**: Represents the intentional absence of any object value.
+4. **`Null`**: Represents the intentional `absence` of any object value.
 
-4. **`Undefined`**: Represents a variable that has been declared but has not been assigned a value.
+5. **`Undefined`**: Represents a variable that `has been declared` but has `not been assigned` a value.
 
-5. **`Symbol`**: Represents a unique identifier, used typically as keys in object properties.
+6. **`Symbol`**: Represents a `unique identifier`, used typically as `keys` in object properties.
 
-6. **`BigInt`**: Represents integers with arbitrary precision, exceeding the limit of the Number type.
+7. **`BigInt`**: Represents integers with `arbitrary precision`, exceeding the limit of the Number type.
 
 
-> Primitive types are stored directly in memory and are compared by their value. When you assign a primitive value to a variable or pass it as an argument, a copy of the value is created.
+> Primitive types are `stored directly in memory` and are compared by their value. When you assign a primitive value to a variable or pass it as an argument, a copy of the value is created.
 
 
 ## Reference Types
-> Reference types, also known as `objects`, are more complex data types. They can hold multiple values and have properties and methods. Reference types are mutable, meaning their values can be modified after they are created. The reference types in JavaScript include:
+> Reference types, also known as `objects`, are more complex data types. They can hold `multiple values` and have `properties` and `methods`. Reference types are `mutable`, meaning their values can be modified after they are created. The reference types in JavaScript include:
 
 - **`Object`**: Represents a collection of key-value pairs or properties.
 
@@ -31,10 +35,13 @@
 
 - **`Function`**: Represents a reusable block of code.
 
-> Reference types are stored in memory, and variables of reference types hold references or pointers to the memory location where the actual values are stored. When you assign a reference type to a variable or pass it as an argument, you are working with a reference to the value in memory, rather than a direct copy of the value.
+> Reference types are `stored in memory`, and variables of reference types hold `references` or `pointers` to the `memory location` where the actual values are stored. When you assign a reference type to a variable or pass it as an argument, you are working with a reference to the value in memory, rather than a direct copy of the value.
 
 
 ## Examples
+
+> The below code snippet demonstrates the usage of different data types and provides examples for better understanding.
+> By running this code, you can observe the behavior and output of each data type in the console.
 
 ```javascript
 
