@@ -94,7 +94,7 @@ console.log(firstName + " " + lastName);
 
 
 
-// 5. Logical Operators: Perform logical operations on boolean values.
+// 5. Logical Operators
 let isLoggedIn = true;
 let isAdmin = false;
 console.log(isLoggedIn && isAdmin); // Output: false (both conditions must be true)
@@ -103,8 +103,7 @@ console.log(!isLoggedIn);           // Output: false (negation of isLoggedIn)
 
 
 
-// 6. Ternary Operators: Shorthand for writing conditional statements
-// condition ? expression1 : expression2
+// 6. Ternary Operators
 let age = 20;
 let message = (age >= 18) ? "You are an adult" : "You are a minor";
 console.log(message); // Output: "You are an adult"
