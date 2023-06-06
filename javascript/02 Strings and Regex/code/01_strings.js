@@ -45,17 +45,6 @@ str[0] = "J";
 str += " World";   
 console.log(str);
 
-/* 
-We cant Change Individual Characters like this
-This will not change the first character to "J"
-
- We cant Appending Characters like this
- str += " World"; 
- This will create a new string, but not modify the original
-
- To perform such modifucations, there are string methods.
-*/
-
 
 
 
