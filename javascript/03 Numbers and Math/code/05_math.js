@@ -1,4 +1,3 @@
-// Math is a built-in object in JavaScript that provides mathematical functions and constants for performing common mathematical operations
 
 // 1.  Math.abs(x) : Returns the absolute value of a x
 console.log(Math.abs(-5)); // Output: 5

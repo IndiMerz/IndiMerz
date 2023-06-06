@@ -1,27 +1,26 @@
-// 1. EPSILON :	The difference between 1 and the smallest number > 1
-console.log(Number.EPSILON);        // 2.220446049250313e-1
+// 1. EPSILON 
+console.log(Number.EPSILON); 
 
-// 2. MAX_VALUE : The largest number possible in JavaScript
-console.log(Number.MAX_VALUE);       // 1.7976931348623157e+308
+// 2. MAX_VALUE
+console.log(Number.MAX_VALUE); 
 
-// 3. MIN_VALUE : The smallest number possible in JavaScript
-console.log(Number.MIN_VALUE);       // 5e-324
+// 3. MIN_VALUE
+console.log(Number.MIN_VALUE);
 
-// 4. MAX_SAFE_INTEGER : The maximum safe integer (253 - 1)
-console.log(Number.MAX_SAFE_INTEGER);    // Output: 9007199254740991
+// 4. MAX_SAFE_INTEGER
+console.log(Number.MAX_SAFE_INTEGER);
 
-
-// 4. MIN_SAFE_INTEGER : The minimum safe integer -(253 - 1)
-console.log(Number.MIN_SAFE_INTEGER);    // Output: -9007199254740991
-
-
-// 5. POSITIVE_INFINITY : Infinity (returned on overflow)
-console.log(Number.POSITIVE_INFINITY);   // Output: Infinity
+// 5. MIN_SAFE_INTEGER 
+console.log(Number.MIN_SAFE_INTEGER);
 
 
-// 6. NEGATIVE_INFINITY : Negative infinity (returned on overflow)
-console.log(Number.NEGATIVE_INFINITY);   // Output: -Infinity
+// 6. POSITIVE_INFINITY
+console.log(Number.POSITIVE_INFINITY); 
 
 
-// 7. NaN : A "Not-a-Number" value
-console.log(Number.NaN);                 // Output: NaN
+// 7. NEGATIVE_INFINITY
+console.log(Number.NEGATIVE_INFINITY);
+
+
+// 8. NaN
+console.log(Number.NaN);
