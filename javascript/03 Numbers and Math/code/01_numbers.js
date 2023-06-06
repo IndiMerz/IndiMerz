@@ -3,13 +3,10 @@ let y;
 let z;
 let result;
 
-// 1. JavaScript has only one type of number. Numbers can be written with or without decimals.
-// The maximum number of decimals is 17
 x = 5;
 y = 7.3;
 
 
-// 2.  Integers (numbers without a period or exponent notation) are accurate up to 15 digits.
 x = 999999999999999        // accurate
 y = 878396226626737527672  // 878396226626737500000,  not accurate 
 
@@ -91,7 +88,6 @@ console.log(result);
 
 
 // 7. Infinity
-// Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.
 
 // Operation with Infinity
 
