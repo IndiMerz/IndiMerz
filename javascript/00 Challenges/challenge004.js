@@ -12,3 +12,4 @@ console.log(arr3);
 const arr4 = arr1.concat(arr2);
 arr4.splice(4, 1);
 console.log(arr4);
+
