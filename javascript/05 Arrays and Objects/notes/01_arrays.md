@@ -4,7 +4,9 @@
 ## 1. Creating an Array
 
  - `**Array literal**`
-To create an array, you can use an array literal enclosed in square brackets. Each element is separated by a comma. For example:
+To create an array, you can use an array literal enclosed in square brackets. Each element is separated by a comma. 
+
+For example:
 ```javascript
 const fruits = ['Apple', 'Mango', 'Banana', 'Orange'];
 const numbers = [23, 42, 55, 16, 64, 75];
@@ -12,7 +14,9 @@ const ageName = ['John', 28, 'Mike', 46, 'Andrews', 35];
 ```
 
  - `**Array Constructor**`
-Alternatively, you can create an array using the `Array` constructor. For example:
+Alternatively, you can create an array using the `Array` constructor. 
+
+For example:
 ```javascript
 const oddNum = new Array(1, 3, 5, 7, 9);
 ```

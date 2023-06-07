@@ -1,6 +1,5 @@
 // 1. Popping and Pushing
-// pop() removes the last element from an array
-// push() adds a new element to an array at the end
+
 const myFavBrands = ['Apple', 'Oneplus', 'Oppo', 'Samsung'];
 
 let remove = myFavBrands.pop();
@@ -12,8 +11,7 @@ console.log(myFavBrands); // [ 'Apple', 'Oneplus', 'Oppo', 'Vivo' ]
 
 
 // 2. Shifting and Unshifting
-// shift() removes the first array element
-// unshift() adds a new element to an array at the beginning
+
 const vegetables = ['Potato', 'Tomato', 'Brinjal'];
 
 vegetables.shift();
@@ -25,8 +23,7 @@ console.log(vegetables); // [ 'Cabbage', 'Tomato', 'Brinjal' ]
 
 
 // 3.  Splicing and Slicing
-// splice() can be used to add new or remove existing elements to an array
-// slice() slices out a piece of an array into a new array
+
 const countries = ['India', 'US', 'Japan', 'Brazil', 'Canada', 'Ireland'];
 
 let spliceOp;
@@ -61,10 +58,68 @@ let sliceOp;
 // slice out rest of elements starting from 2 into new array
 sliceOp = countries.slice(2);
 console.log(sliceOp, countries);
-// New Array :       [ 'Australia', 'England', 'Denmark', 'India' ] 
-// Source Array :    [ 'Russia', 'China', 'Australia', 'England', 'Denmark', 'India' ]
 
 
 // slice(x, y): x included, y excluded
 sliceOp = countries.slice(2, 4);
 console.log(sliceOp);  // [ 'Australia', 'England' ]
+
+// concat
+
+const evenNum = [1, 3, 5, 7, 9];
+const oddNum = [0, 2, 4, 6, 8];
+const wholeNum = evenNum.concat(oddNum).sort(function(a, b) { return a - b; });
+console.log(wholeNum);
+
+const ax = [13, 33, 45, 57, 95];
+const by = [45, 24, 64, 63, 58];
+const cz = [55, 22, 44, 36, 84];
+const concat = ax.concat(by, cz)
+console.log(concat);
+
+// concat by spread operator
+
+let concatBySpreadOp = [...evenNum, ...oddNum];
+console.log(concatBySpreadOp);
+
+
+// to remove occurance
+const arr1 = [32, 54, 65, 75];
+const arr2 = [21, 53, 75, 35];
+const arr3 = [...new Set(arr1.concat(arr2))];
+console.log(arr3);
+
+
+const arr10 = ['apple', 'mango', 'banana'];
+const arr20 = ['watermelon', 'banana', 'orange'];
+const arr30 = [...new Set(arr10.concat(arr20))];
+console.log(arr30);
+
+
+// flat
+
+const myArr = [1, 2, [3, 4], 5, [6, 7], 8]
+const flatIt = myArr.flat();
+console.log(flatIt);
+
+
+// isArray
+
+let x;
+
+x = Array.isArray(myArr);
+
+
+// from
+
+x = Array.from('78295')
+
+
+// of
+const mk = 'apple';
+const uk = 'banana';
+x = Array.of(mk,uk)
+
+
+
+console.log(x)
