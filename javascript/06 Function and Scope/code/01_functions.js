@@ -1,35 +1,81 @@
-function heyy(name, greetText3 = 'greetings from js') {
+// declare a fn
+function sayHi(){
+    console.log('Hello World')
+}
+sayHi()
+
+
+function add(a, b){
+    return a+b;
+    	// console.log(sum) (this line will never show, as lines is after return)
+}
+
+// for getting value in console\
+console.log(add(32, 3))
+
+function sub(a,b){
+    return a-b
+}
+console.log(sub(42, 33))
+
+function mul(a,b){
+    return a*b
+}
+console.log(mul(4, 3))
+
+function div(a,b){
+    return a/b
+}
+console.log(div(4, 3))
+
+
+
+
+// param
+function createObj(param1, param2, ...paramN){
+    // do something
+}
+// argument
+console.log(createObj(1,3,4))
+
+
+// setting default param
+function checkStatus(usr = 'unknown user'){
+  return usr + ' registered succesfully'
+}
+console.log(checkStatus()); // unknown user registered succesfully
+console.log(checkStatus('John'));  // John registered succesfully
+
+
+
+function heyy(name, greetText3 = 'greetings from microsoft') {
 	console.log(greetText3 + ' ' + name);
-	console.log(name + ' is nice person');
 }
 
-let name = 'david';
+let name1 = 'david';
 let name2 = 'alex';
-let name3 = 'smith';
-let name4 = 'andre';
-let greetText3 = 'hello, morning';
 
-heyy(name, greetText3);
-heyy(name2);
-heyy(name3, greetText3);
-heyy(name4);
+let greetText3 = 'whats up';
+
+heyy(name1, greetText3); // whats up david
+heyy(name2);  // greetings from microsoft alex
 
 
-// return value from function
-function sum(a, b, c) {
-	let d = a + b + c;
-	return d;
-	// console.log(sum) (this line will never show, as lines is after return)
+// rest param
+function passAllArg (...num){
+    return num;
+}
+console.log(passAllArg(3,4,6,35,6,6,2,6,632,));
+// [ 3, 4, 6,  35, 6, 6, 2, 6, 632 ]
+
+
+function addAllNums(...numbers){
+    let total =0;
+
+    for(const add of numbers){
+        total += add;
+    }
+    return total
 }
 
-// for getting value in console, we can create a var and run console!
-let rval = sum(2, 1, 4);
-console.log(rval);
-
-function product(a, b) {
-	let c = a * b;
-	return c;
-}
-
-let multiply = product(2, 9);
-console.log(multiply);
+console.log(addAllNums(2,4,6,7,8,84,3,24,6));  // 144
