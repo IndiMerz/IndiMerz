@@ -79,3 +79,34 @@ function addAllNums(...numbers){
 }
 
 console.log(addAllNums(2,4,6,7,8,84,3,24,6));  // 144
+
+
+
+// obj as param
+
+function checkUsr(user){
+    return `The user ${user.name} with id of ${user.id} has logged in successfully`
+}
+
+const user1 = {
+    name: 'Kyle',
+    id: 343,
+}
+
+const user2 = {
+    name: 'Alex',
+    id: 635,
+}
+
+console.log(checkUsr(user1));
+
+
+// array as param
+
+function getRNfmArr(arr){
+    const ranIdx = Math.floor(Math.random() * arr.length);
+    const ranNum = arr[ranIdx];
+    return ranNum;
+}
+
+console.log(getRNfmArr([2,3,6]));
