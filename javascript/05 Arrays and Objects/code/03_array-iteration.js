@@ -41,8 +41,6 @@ searchEngines.forEach((allEngine) => {
 	console.log(allEngine.url);
 });
 
-
-
 //  Array.filter
 
 const numbers = [0, 1, 2, 3, 4, 5, , 6, 7, 8, 9, 10];
@@ -102,6 +100,8 @@ console.log(decadeCompanies);
 
 
 
+
+
 // Array.map
 const oddNums = [1, 3, 5, 7, 9];
 
@@ -113,10 +113,9 @@ console.log(get3x); // [ 3, 9, 15, 21, 27 ]
 // by forEach
 const getDouble = [];
 oddNums.forEach((number) => {
-    return getDouble.push(number*2)
+	return getDouble.push(number * 2);
 });
-console.log(getDouble);  // [ 2, 6, 10, 14, 18 ]
-
+console.log(getDouble); // [ 2, 6, 10, 14, 18 ]
 
 const startups = [
 	{ name: 'Startup One', category: 'Finance', start: 1982, end: 2005 },
@@ -138,33 +137,100 @@ const startups = [
 
 // get all startup names in an array
 const getNames = startups.map((startup) => {
-    return startup.name;
-})
+	return startup.name;
+});
 console.log(getNames);
-
 
 // get startup and category
 const getStartupNCat = startups.map((startup) => {
-    return {
-        name: startup.name,
-        category: startup.category
-    };
-})
+	return {
+		name: startup.name,
+		category: startup.category,
+	};
+});
 
 console.log(getStartupNCat);
 
-
 // each startup in year
 const timeFrame = startups.map((startup) => {
-    return {
-        name: startup.name,
-        duration: startup.end - startup.start + ' years'
-    }
-})
+	return {
+		name: startup.name,
+		duration: startup.end - startup.start + ' years',
+	};
+});
 
 console.log(timeFrame);
 
-
-
 // chaining
+const primeNum = [2, 3, 5, 7, 11, 13];
 
+const rootN2x = primeNum
+	.map((value) => {
+		return Math.sqrt(value).toFixed(2);
+	})
+	.map((sqrt) => {
+		return sqrt * 2;
+	});
+
+console.log(rootN2x);
+
+
+// shorter way
+
+const doubleNroot = primeNum
+    .map((value) => value*2)
+    .map((root) => Math.sqrt(root).toFixed(2));
+
+    console.log(doubleNroot);
+
+
+
+// chaining different methods
+const getSingleDigiNumNDoubleIt = primeNum
+    .filter((singleDigit) => {
+        return singleDigit < 10;
+    })
+
+    .map((doubleIt) => {
+        return doubleIt * 2;
+    })
+
+
+    console.log(getSingleDigiNumNDoubleIt);
+
+
+
+    // Array.reduce 
+    const price = [13, 42, 21, 41, 54, 64 ];
+
+    const getTotal = price.reduce((accumulator, currentValue) => {
+        return accumulator + currentValue;
+    }, 0)
+    console.log(getTotal);
+
+
+    // by using for loop
+    const getSum = () => {
+        let acc = 0;
+        for (const curr of price){
+            acc += curr
+        }
+        return acc;
+    }
+
+    console.log(getSum());
+
+
+
+    const cart = [
+        {id: 1, name: 'Phone', price: 249},
+        {id: 2, name: 'Earbuds', price: 99},
+        {id: 3, name: 'Laptop', price: 799},
+        {id: 4, name: 'Chair', price: 148}
+    ];
+
+    const getTotalPrice = cart.reduce((acc, curr)=>{
+        return acc + curr.price;
+    }, 0)
+
+    console.log(getTotalPrice);
