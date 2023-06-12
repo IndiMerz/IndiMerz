@@ -52,3 +52,11 @@ listItem.style.width = '30vw';
 
 
 // 2. querySelector
+document.querySelector('h1');
+document.querySelector('#faang');
+document.querySelector('.tech');
+document.querySelector('input[type=text]').style.borderRadius = '10px';
+document.querySelector('li:nth-child(2)').style.color = 'red';
+
+document.querySelector('ul').style.backgroundColor = 'palegreen'
+document.querySelector('li').innerText = 'Notebook'
