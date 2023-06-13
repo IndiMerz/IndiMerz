@@ -85,9 +85,17 @@ list.forEach((item, index)=>{
 })
 
 
-// getElementByClassName
-document.getElementsByClassName('item')[1].innerText = 'it is by classname'
+// getElementsByClassName
+document.getElementsByClassName('item')[1].innerText = 'it is by classname';
+
+const className = document.getElementsByClassName('item');
+// convert html collections in array
+const makeItArray = Array.from(className);
+// now we can use forEach on these html elements
+makeItArray.forEach((names) => {
+    console.log(names.innerText)
+});
 
 
-// getElementByTagName
-document.getElementsByTagName('li')[3].innerText = 'it is by tagname'
+// getElementsByTagName
+document.getElementsByTagName('li')[3].innerText = 'it is by tagname';
