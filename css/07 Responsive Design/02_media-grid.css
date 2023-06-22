@@ -1,0 +1,74 @@
+
+.container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar navbar'
+            'section section section section aside'
+            'footer footer footer footer footer';
+        }
+
+        /* media queries */
+
+        @media only screen and (max-width:420px){
+            body{
+                background-color: red;
+            }
+
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+    
+    @media only screen and (min-width:421px) and (max-width:912px){
+        body{
+            background-color: blue;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+        }
+
+        @media only screen and (min-width:913px){
+            body{
+                background-color: green;
+            }
+        }
+
+
+        /* styling and more css */
+
+        nav{
+            grid-area: navbar;
+        }
+
+        section{
+            grid-area: section;
+        }
+
+        aside{
+            grid-area: aside;
+        }
+
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+
+        .bdr{
+            background-color: aquamarine;
+            color: rgb(31, 31, 115);
+            font-family: 'Trebuchet MS';
+            padding: 20px;
+        }

@@ -1,0 +1,68 @@
+/* column grid */
+
+.container-1 {
+	display: grid;
+	grid-column-gap: 3rem;
+	grid-row-gap: 1rem;
+	/* this give gap between grids */
+
+	/* grid-template-columns: 200px 150px 350px ; */
+	/* grid-template-columns: 200px 150px 350px 100px; */
+	/* grid-template-columns: 200px 150px auto 200px 250px; */
+	grid-template-columns: 1fr 4fr 2fr;
+	/* this will make no of columns columns with desired size */
+
+	/* grid-template-columns: repeat(7, auto);
+         grid-template-columns: repeat(3, 300px); */
+	/* this uses to make multiple columns, repeat(no. of column, size) */
+}
+
+.item-1 {
+	background-color: rgb(167, 173, 99);
+	padding: 20px;
+	border: 2px solid aquamarine;
+}
+
+/* row grid */
+
+.container-2 {
+	display: grid;
+	grid-gap: 1.4rem;
+	grid-template-rows: 2fr 6fr 2fr 4fr;
+	grid-auto-rows: 3fr;
+	/* rest of rows will follow auto fr */
+
+	grid-template-columns: repeat(3, 7fr);
+}
+
+.item-2 {
+	background-color: rgb(58, 109, 92);
+	padding: 20px;
+	border: 2px solid aquamarine;
+}
+
+/* spanning rows and columns */
+
+.container-3 {
+	display: grid;
+	grid-gap: 1.3rem;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.item-3 {
+	background-color: rgb(55, 54, 93);
+	color: azure;
+	padding: 20px;
+	border: 2px solid aquamarine;
+}
+
+.item-3:first-child {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+
+	/* shortcut */
+	grid-column: 3 / span 4;
+	grid-row: 1 / span 3;
+}

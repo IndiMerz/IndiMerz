@@ -1,0 +1,29 @@
+/* 1. ::after - Inserts content after the content of an element. */
+p::after {
+	content: ' (new)';
+}
+
+/* 2. ::before - Inserts content before the content of an element. */
+blockquote::before {
+	content: 'Quote: ';
+}
+
+/* 3. ::first-letter - Selects the first letter of the text content of an element. */
+p::first-letter {
+	font-size: 2em;
+}
+
+/* 4. ::first-line - Selects the first line of the text content of an element. */
+p::first-line {
+	font-weight: bold;
+}
+
+/* 5. ::selection - Selects the portion of an element that is selected by the user. */
+::selection {
+	background-color: yellow;
+}
+
+/* 6. ::placeholder - Selects the placeholder text in an input field. */
+input::placeholder {
+	color: gray;
+}

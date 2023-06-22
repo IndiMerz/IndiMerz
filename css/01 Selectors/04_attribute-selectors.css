@@ -1,0 +1,36 @@
+/* 1. Existence Selector: Selects elements that have a specific attribute. */
+[disabled] {
+	opacity: 0.5;
+}
+
+[class] {
+	color: red;
+}
+
+/* 2. Equality Selector: Selects elements that have a specific attribute with an exact value. */
+a[target='_blank'] {
+	color: red;
+}
+
+input[type='text'] {
+	background-color: aquamarine;
+}
+
+a[target] {
+	color: rgb(0, 120, 248);
+}
+
+/* 3. Substring Selector: Selects all <img> elements with a "src" attribute containing the substring "logo". */
+img[src*='logo'] {
+	width: 150px;
+}
+
+/* 4. Attribute Starts With Selector: Selects elements that have a specific attribute starting with a specific value. */
+[class^='btn-'] {
+	background-color: blue;
+}
+
+/* 5. Attribute Ends With Selector: Selects elements that have a specific attribute ending with a specific value. */
+[src$='.png'] {
+	border: 1px solid black;
+}

@@ -1,0 +1,34 @@
+/* 1. Group selectors */
+/* Selects multiple elements and applies the same styles to all of them. */
+
+li, p { 
+	background-color: aqua; 
+}
+
+/* 2. Decendent Selector */
+/* Selects all <span> elements that are descendants of <div> elements. */
+
+div span { 
+	font-weight: bold; 
+}
+
+/* 3. Child Selectors */
+/* Selects all <li> elements that are direct children of <ul> elements. */
+
+ul > li {
+	list-style: none;
+}
+
+/* 4. Adjacent Sibling Selectors */
+/* Selects the <h2> element that immediately follows a <p> element. */
+
+p + h2 { 
+	color: blue; 
+}
+
+/* 5. General Sibling Selectors */
+/* Selects all <input> elements that are siblings and come after a <label> element. */
+
+label ~ input { 
+	border: 1px solid gray; 
+}

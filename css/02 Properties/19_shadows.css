@@ -1,0 +1,28 @@
+#container {
+	display: flex;
+	margin: 40px 20px;
+	padding: 10px 20px;
+}
+
+.box {
+	border: 2px solid green;
+	margin: 20px 10px;
+	padding: 10px;
+	background-color: blanchedalmond;
+
+	/* box-shadow: offset-x offset-y color ; */
+	/* box-shadow: offset-x offset-y blur radius color ; */
+	/* box-shadow: offset-x offset-y blur radius spread color ; */
+	box-shadow: 5px 6px 3px 3px rgba(69, 104, 119, 0.3);
+	/* in rgba, a stands for alpha, more the value of a, high the contrast of color and vice versa */
+
+	/* negative value will make shadow at up sides */
+	box-shadow: -5px -6px 3px 3px rgba(69, 104, 119, 0.3);
+}
+
+.box h2 {
+	text-shadow: 2px 3px 4px rgb(99, 145, 99);
+	/* neg value will make shadow at up sides */
+
+	/* blur radius applies in this one too */
+}

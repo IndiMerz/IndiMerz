@@ -1,0 +1,33 @@
+
+        .container{
+            display: grid;
+            grid-gap: 0.8rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar navbar'
+            'section section section section aside'
+            'footer footer footer footer footer';
+        }
+
+        .decoration{
+            background-color: beige;
+            border: 2px solid aquamarine;
+            padding: 20px;
+            color: rgb(19, 32, 94);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #navbar{
+            grid-area: navbar;
+        }
+
+        #section{
+            grid-area: section;
+        }
+
+        #aside{
+            grid-area: aside;
+        }
+
+        #footer{
+            grid-area: footer;
+        }

@@ -1,0 +1,74 @@
+/* 1. :active - Applies styles to an element when it is being activated by the user. */
+a:active {
+	color: red;
+}
+
+/* 2. :checked - Selects an input element that is checked. */
+input:checked {
+	border: 2px solid green;
+}
+
+/* 3. :disabled - Selects a disabled element. */
+input:disabled {
+	opacity: 0.5;
+}
+
+/* 4. :empty - Selects an element that has no children. */
+p:empty {
+	display: none;
+}
+
+/* 5. :enabled - Selects an enabled element. */
+button:enabled {
+	background-color: green;
+}
+
+/* 6. :first-child - Selects the first child element of its parent. */
+li:first-child {
+	font-weight: bold;
+}
+
+/* 7. :focus - Selects an element that has focus. */
+input:focus {
+	outline: 2px solid blue;
+}
+
+/* 8. :hover - Applies styles to an element when the mouse is hovering over it. */
+a:hover {
+	text-decoration: underline;
+}
+
+/* 9. :last-child - Selects the last child element of its parent. */
+div:last-child {
+	border-bottom: 1px solid black;
+}
+
+/* 10. :not - Selects elements that do not match a specific selector. */
+p:not(.special) {
+	color: blue;
+}
+
+/* 11. :nth-child - Selects elements based on their position in relation to their parent. */
+ul li:nth-child(odd) {
+	background-color: lightgray;
+}
+
+/* 12. :nth-last-child - Selects elements based on their position counting from the last child. */
+ul li:nth-last-child(3) {
+	color: red;
+}
+
+/* 13. :only-child - Selects elements that are the only child of their parent. */
+p:only-child {
+	font-style: italic;
+}
+
+/* 14. :target - Selects the target element of the current URL. */
+#section1:target {
+	background-color: yellow;
+}
+
+/* 15. :visited - Selects a visited link. */
+a:visited {
+	color: purple;
+}
