@@ -40,3 +40,70 @@ const addTechStack2 = (stack, cb) => {
 addTechStack2({ title: 'Node', description: 'This is Server' }, getTechStack);
 
 // both will take, 5 + 2 seconds to execute
+
+
+
+
+
+
+// callback hell
+
+function getData(endpoint){
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('GET', endpoint);
+
+    xhr.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200){
+            // console.log(JSON.parse(this.responseText));
+        }
+    }
+
+    setTimeout(() => {
+        xhr.send();
+    }, Math.round(Math.random()*3000)+1000);
+} 
+
+getData('./06_movies.json')
+getData('./07_indian-movies.json')
+
+// it will not show result in sequence, it will show randomly,
+
+
+// to fix this:
+function getData2(endpoint, cb){
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('GET', endpoint);
+
+    xhr.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200){
+            cb(JSON.parse(this.responseText));
+        }
+    }
+
+    setTimeout(() => {
+        xhr.send();
+    }, Math.round(Math.random()*3000)+1000);
+} 
+
+getData2('./06_movies.json', (data) => {
+    console.log(data);
+    getData2('./07_indian-movies.json', (data) => {
+        console.log(data);
+    })
+})
+// now firstly, 06_movies.json will execute and then ./07_indian-movies.json
+
+
+
+
+getData2('./07_indian-movies.json', (data) => {
+    console.log(data);
+    getData2('./06_movies.json', (data) => {
+        console.log(data);
+    })
+})
+// in this case, ./07_indian-movies.json > ./06_movies.json
+
+// we can nest as may as we want
