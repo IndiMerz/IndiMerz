@@ -102,3 +102,52 @@ const getEndPoints = async () => {
 };
 
 getEndPoints();
+
+
+
+
+// multiple promises by async await
+
+const getAllData = async () => {
+    const moviesRes = await fetch('./06_movies.json')
+    const movies = await moviesRes.json();
+    
+    const indianMoviesRes = await fetch('./07_indian-movies.json')
+    const indianMovies = await indianMoviesRes.json();
+
+    console.log(movies, indianMovies);
+}
+
+getAllData();
+
+
+// by using promise all
+
+const getDataPromiseAll = async () => {
+    const [movieRes, indianMoviesRes] = await Promise.all([
+        fetch('./06_movies.json'),
+        fetch('./07_indian-movies.json')
+    ])
+
+    const movies = await movieRes.json();
+    const indianMovies = await indianMoviesRes.json();
+
+    console.log(movies, indianMovies);
+}
+
+getDataPromiseAll();
+
+
+
+// by using .then in async
+
+const getDataPromiseAllwithThen = async () => {
+    const [movies, indianMovies] = await Promise.all([
+        fetch('./06_movies.json').then((res) => res.json()),
+        fetch('./07_indian-movies.json').then((res) => res.json())
+    ])
+
+    console.log(movies, indianMovies);
+}
+
+getDataPromiseAllwithThen();
