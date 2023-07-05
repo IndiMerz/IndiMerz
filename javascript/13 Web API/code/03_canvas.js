@@ -32,7 +32,6 @@ ctx.strokeText('Stroke Text', 200, 400, 100);
 
 
 // Draw Image
-const image = document.getElementById('football');
+const image = document.getElementById('car');
 image.style.display = 'none';
-
-image.addEventListener('load', () => ctx.drawImage(image, 200, 250, 100, 100));
+ctx.drawImage(image, 250, 250, 100, 100);
