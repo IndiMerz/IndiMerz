@@ -101,3 +101,44 @@ const obj2 = new Object();
 
 console.log(obj1, typeof obj1); // object
 console.log(obj2, typeof obj2); // object
+
+
+
+// Object Properties
+function Employee(name, age, job) {
+	this.name = name;
+	this.age = age;
+	this.job = job;
+}
+
+const employee1 = new Employee('Ella Walker', 30, 'Database');
+console.log(employee1.name, employee1.job);
+
+const employee2 = new Employee('Willie Bishop', 32, 'Backend');
+console.log(employee2.name, employee2.job);
+
+// add property
+employee2.country = 'Ireland';
+employee1.salary = '$50k';
+
+// delete property
+delete employee1.age;
+
+// check property
+console.log(employee1.hasOwnProperty('age')); // false
+console.log(employee2.hasOwnProperty('age')); // true
+
+// get keys
+console.log(Object.keys(employee1));
+console.log(Object.keys(employee2));
+
+// get values
+console.log(Object.values(employee1));
+console.log(Object.values(employee2));
+
+// get entries
+console.log(Object.entries(employee1));
+
+for (let [key, value] of Object.entries(employee1)){
+    console.log(`${key} - ${value}`);
+}
