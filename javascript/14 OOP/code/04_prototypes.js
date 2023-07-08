@@ -65,3 +65,49 @@ console.log(cuboid);
 console.log(cuboid.volume());
 console.log(cuboid.area());
 console.log(cuboid.isCube());
+
+
+// Prototypical Inheritance
+function Shape(name) {
+    this.name = name
+}
+
+Shape.prototype.logName = function (){
+    console.log(`Shape Name: ${this.name}`);
+}
+
+// Creating Shapes
+
+function Square(name, side) {
+    Shape.call(this, name);
+
+    this.side = side;
+}
+// Inherits Shape prototypes
+Square.prototype = Object.create(Shape.prototype)
+
+function Circle(name, radius){
+    Shape.call(this, name);
+
+    this.radius = radius;
+}
+// we can have so many logNames which will work differently
+Square.prototype.logName = function (){
+    console.log(`Square Name: ${this.name}`);
+}
+
+// Inherits Shape prototypes
+Circle.prototype = Object.create(Shape.prototype)
+
+// set prototype constructor
+Square.prototype.constructor = Square
+Circle.prototype.constructor = Circle
+
+const sq = new Square('square 1', 5);
+const cir = new Circle('circle 1', 8);
+
+console.log(sq.constructor);
+console.log(cir.constructor);
+
+sq.logName()
+cir.logName()
