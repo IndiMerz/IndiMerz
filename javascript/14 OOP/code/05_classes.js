@@ -102,3 +102,26 @@ const pGram = new Parallelogram('p1', 20, 30);
 
 console.log(pGram.area()); 
 console.log(Parallelogram.getClass()); 
+
+
+
+
+// this and bind()
+
+class App {
+    constructor () {
+        this.server = 'localHost';
+
+        document
+            .querySelector('button')
+            .addEventListener('click', this.getServerName.bind(this))
+            // to use this method, we need to add bind ()
+    }
+
+    getServerName() {
+        console.log(this.server);
+    }
+}
+
+const app = new App();
+app.getServerName();
