@@ -10,7 +10,7 @@ class Stack {
 	}
 
 	pop() {
-		if (this._count === 0) {
+		if (this.isEmpty()) {
 			return 'Undefined';
 		}
 
@@ -25,22 +25,26 @@ class Stack {
 		return item;
 	}
 
-    peek() {
-        if (this._count === 0) {
+	peek() {
+		if (this.isEmpty()) {
 			return 'No Item in Stack';
 		}
 
-        return this._items[this._count - 1];
-    }
+		return this._items[this._count - 1];
+	}
 
-    length() {
-        return this._count;
-    }
+	isEmpty() {
+		return this._items.length === 0;
+	}
 
-    clear() {
-        this._items = [];
-        this._count = 0;
-    }
+	size() {
+		return this._items.length;
+	}
+
+	clear() {
+		this._items = [];
+		this._count = 0;
+	}
 }
 
 const myStack = new Stack();
@@ -57,7 +61,5 @@ myStack.pop();
 myStack.clear();
 
 console.log('Top Item: ' + myStack.peek());
-console.log('Stack Length: ' + myStack.length());
+console.log('Stack Size: ' + myStack.size());
 console.log(myStack);
-
-
