@@ -1,0 +1,19 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin-inline: auto;
+    
+    @media screen and (min-width: 769px) {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    
+    &__main{
+        background-color: #047e55;
+    }
+
+    &__sidebar{
+        background-color: #0303b0;
+    }
+}
