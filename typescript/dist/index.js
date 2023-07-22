@@ -19,7 +19,7 @@ employee = [
     [2, 'clark'],
     [3, 'ben'],
     [4, 'adam'],
-    [5, 'jason']
+    [5, 'jason'],
 ];
 // Union
 let productID;
@@ -64,7 +64,7 @@ const person = {
     name: 'Henry',
     age: 36,
     profession: 'Database Engineer',
-    active: false
+    active: false,
 };
 // Type Assertion
 let cid = 21;
@@ -84,5 +84,51 @@ log(34);
 const interfacePerson = {
     name: 'Henry',
     profession: 'Database Engineer',
-    active: false
+    active: false,
 };
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
+const mul = (x, y) => x * y;
+const div = (x, y) => x / y;
+console.log(add(12, 3));
+console.log(sub(12, 3));
+console.log(mul(12, 3));
+console.log(div(12, 3));
+// Classes
+class Animal {
+    constructor(id, name, type) {
+        this.id = id;
+        this.name = name;
+        this.type = type;
+    }
+    description() {
+        return `${this.name} is a ${this.type} animal`;
+    }
+}
+const animal1 = new Animal(1, 'Lion', 'Wild');
+const animal2 = new Animal(2, 'Dog', 'Domestic');
+const animal3 = new Animal(3, 'Horse', 'Domestic');
+console.log(animal1);
+console.log(animal1.name);
+console.log(animal1.description()); // Lion is a Wild animal
+// SubClasses
+class Pets extends Animal {
+    constructor(id, name, type, home) {
+        super(id, name, type);
+        this.home = home;
+    }
+}
+const pet1 = new Pets(1, 'Cow', 'Domestic', 'cowshed');
+console.log(pet1);
+// we can still access description() even it is not present in subclass
+console.log(pet1.description());
+// Generics
+function getArr(items) {
+    return new Array().concat(items);
+}
+let numArr = getArr([1, 2, 3, 4, 5]);
+let strArr = getArr(['ben', 'kyle', 'john']);
+numArr.push(6, 7, 8);
+strArr.push('carlos');
+console.log(numArr);
+console.log(strArr);
