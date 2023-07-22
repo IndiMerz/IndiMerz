@@ -71,3 +71,52 @@ console.log(Dir3.Left);     // Left
 console.log(Dir3.Right);    // Right
 
 
+// Object
+type Person = {
+    name: string,
+    age: number,
+    profession: string,
+    active: boolean
+}
+
+const person: Person = {
+    name: 'Henry',
+    age: 36,
+    profession: 'Database Engineer',
+    active: false
+}
+
+// Type Assertion
+let cid: any = 21;
+
+let customerID = cid as number;
+
+// Function
+function addNum(x: number, y: number): number {
+    return x+y;
+}
+
+console.log(addNum(12,43)); // 55
+
+// Void
+function log(message: string | number): void {
+    console.log(message);
+}
+// we can passed string as well as number in void
+log('hello');
+log(34);
+
+
+// Interface
+interface InterfacePerson {
+    name: string,
+    profession: string, 
+    age?: number, // adding ? make it optional
+    active?: boolean
+}
+
+const interfacePerson: InterfacePerson = {
+    name: 'Henry',
+    profession: 'Database Engineer',
+    active: false
+}

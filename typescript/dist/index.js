@@ -60,3 +60,29 @@ console.log(Dir3.Up); // Up
 console.log(Dir3.Down); // Down
 console.log(Dir3.Left); // Left
 console.log(Dir3.Right); // Right
+const person = {
+    name: 'Henry',
+    age: 36,
+    profession: 'Database Engineer',
+    active: false
+};
+// Type Assertion
+let cid = 21;
+let customerID = cid;
+// Function
+function addNum(x, y) {
+    return x + y;
+}
+console.log(addNum(12, 43)); // 55
+// Void
+function log(message) {
+    console.log(message);
+}
+// we can passed string as well as number in void
+log('hello');
+log(34);
+const interfacePerson = {
+    name: 'Henry',
+    profession: 'Database Engineer',
+    active: false
+};
