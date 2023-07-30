@@ -16,9 +16,37 @@ const customStyle = {
   display: 'inline'
 }
 
+const greetColor = {
+  color: '',
+}
+
+  const time = new Date();
+  const hour = time.getHours()
+  let greet;
+
+  if (hour <= 24 && hour > 18) {
+    greet = 'Good Night'
+    greetColor.color = 'blue'
+  } else if (hour >= 16 && hour <= 18){
+    greet = 'Good Evening'
+    greetColor.color = '#FAF'
+  } else if (hour >= 12 && hour < 16) {
+    greet = 'Good Afternoon'
+    greetColor.color = 'green'
+  } else if (hour >= 5 && hour < 12) {
+    greet = 'Good Morning'
+    greetColor.color = 'red'
+  } else {
+    greet = 'zzzz'
+    greetColor.color = 'violet'
+  }
+
+
 ReactDOM.render(
   // This is how we can render elements on html
   <div>
+    <h1 style={greetColor}>{greet}</h1>
+
     <h1 className='heading' contentEditable='true' spellCheck='false'>Hello {`${fname} ${lname}`}, this is a React App</h1>
     <p>This is how we can access outside variables which is {randomNum}</p>
 
@@ -37,6 +65,7 @@ ReactDOM.render(
     <p style={{ color: '#FAFABD', backgroundColor: 'black'}}>This is css inline styling</p>
     <p style={customStyle}>This is css inline styling using variable</p>
   </div>
+
   </div>,
 document.getElementById('root')
 );
