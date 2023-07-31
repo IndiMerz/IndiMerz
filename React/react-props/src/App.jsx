@@ -2,7 +2,7 @@ import React from 'react'
 import { Card } from './components/Card'
 import contacts from './contacts'
 
-
+/*
 export const App = () => {
   return (
     // This is how we can add props to react, name, country, email etc
@@ -31,3 +31,28 @@ export const App = () => {
     </div>
   )
 }
+*/
+
+// Using Map method 
+
+const createCards = (contacts) => {
+    return (
+        <Card 
+            key={contacts.id}  // key is must to include for mapping etc
+            id={contacts.id}  // we cant access key as a prop, to access it, we need to create another prop
+            name={contacts.name}
+            imgURL={contacts.imgURL}
+            country={contacts.country}
+            phone={contacts.phone}
+            email={contacts.email}
+        />
+    )
+}
+
+export const App = () => {
+    return (
+      <div>
+          {contacts.map(createCards)}
+      </div>
+    )
+  }
