@@ -1,6 +1,9 @@
 import React from 'react'
 import { Card } from './components/Card'
 import contacts from './contacts'
+import { DefaultProps } from './components/DefaultProps'
+import { PropsDestructure } from './components/DefaultProps'
+import { TypesInProp } from './components/PropTypes'
 
 /*
 export const App = () => {
@@ -53,6 +56,21 @@ export const App = () => {
     return (
       <div>
           {contacts.map(createCards)}
+
+          <DefaultProps 
+            title='Default Props'
+          />
+
+          <PropsDestructure 
+            name='Agar'
+            age={20}
+            job='Developer'
+          />
+
+          <TypesInProp 
+            title={'React'}
+            version={18}
+          />
       </div>
     )
   }
