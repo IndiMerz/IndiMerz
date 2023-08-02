@@ -1,38 +1,39 @@
 import React, { useState } from 'react';
 
-// export const ComplexState = () => {
-//     const [fname, setfname] = useState('');
-//     const [lname, setlname] = useState('');
+export const ComplexState2 = () => {
+    const [fname, setfname] = useState('');
+    const [lname, setlname] = useState('');
 
-//     const handleSubmit = (e) => {
-//         e.preventDefault();
-//     }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
 
-//     const handleFname = (e) => {
-//         setfname(e.target.value)
-//     }
+    const handleFname = (e) => {
+        setfname(e.target.value)
+    }
 
-//     const handleLname = (e) => {
-//         setlname(e.target.value)
-//     }
+    const handleLname = (e) => {
+        setlname(e.target.value)
+    }
 
-//   return (
-//     <div>
-//          <h1>Hello {fname} {lname}</h1>
-//         <form onSubmit={handleSubmit}>
-//             <input onChange={handleFname} name='fname' type='text' placeholder='First Name' />
-//             <input onChange={handleLname} name='lname' type='text' placeholder='Last Name' />
-//             <button>Submit</button>
-//         </form>
-//     </div>
-//   )
-// }
+  return (
+    <div>
+         <h1>Hello {fname} {lname}</h1>
+        <form onSubmit={handleSubmit}>
+            <input onChange={handleFname} name='fname' type='text' placeholder='First Name' />
+            <input onChange={handleLname} name='lname' type='text' placeholder='Last Name' />
+            <button>Submit</button>
+        </form>
+    </div>
+  )
+}
 
 // Shorter Way
 export const ComplexState = () => {
 	const [fullname, setfullname] = useState({
 		fname: '',
 		lname: '',
+        email: '',
 	});
 
     const handleName = (e) => {
@@ -41,7 +42,7 @@ export const ComplexState = () => {
         setfullname(prevValue => {
             return {
                 ...prevValue,
-                [name]: value
+                [name]: value,
             }
         })
     }
@@ -51,6 +52,7 @@ export const ComplexState = () => {
 			<h1>
 				Hello {fullname.fname} {fullname.lname}
 			</h1>
+            <p>{fullname.email}</p>
 			<form>
 				<input
 					onChange={handleName}
@@ -66,6 +68,13 @@ export const ComplexState = () => {
 					type='text'
 					placeholder='Last Name'
                     value={fullname.lname}
+				/>
+				<input
+					onChange={handleName}
+					name='email'
+					type='email'
+					placeholder='email'
+                    value={fullname.email}
 				/>
 			</form>
 		</div>
