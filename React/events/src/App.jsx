@@ -1,14 +1,17 @@
 import { Event } from "./components/event"
 import { Forms } from "./components/Forms"
 import { ComplexState } from "./components/ComplexState"
+import { ToDoList } from "./components/ToDoList"
 
 function App() {
 
   return (
     <div>
-          <Event />
+          {/* <Event />
           <Forms />
-          <ComplexState />
+          <ComplexState /> */}
+
+          <ToDoList />
     </div>
   )
 }
