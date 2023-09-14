@@ -38,18 +38,17 @@ export const ItemForm = () => {
 import { useState } from 'react';
 
 export const ItemForm2 = () => {
-	
-    useState({
-        item: '',
-        price: '',
-        date: '',
-    })
+	useState({
+		item: '',
+		price: '',
+		date: '',
+	});
 
-    // prevState will help to not lost other states while updating other
+	// prevState will help to not lost other states while updating other
 	const itemHandler = (e) => {
 		setItem((prevState) => {
-            return { ...prevState, item: e.target.value };
-        });
+			return { ...prevState, item: e.target.value };
+		});
 	};
 
 	const dateHandler = (e) => {
@@ -63,17 +62,49 @@ export const ItemForm2 = () => {
 		});
 	};
 
+	// we can also use shared function for those three function like this:
+
+	const inputChangeHandler = (identifier, value) => {
+		if (identifier === 'item') {
+			setItem(value);
+		} else if (identifier === 'price') {
+			setPrice(value);
+		} else {
+			setDate(value);
+		}
+	};
+
 	return (
 		<form>
-			<input onChange={itemHandler} type='text' placeholder='Enter Item Name' />
-			<input onChange={priceHandler} type='number' placeholder='Enter Amount' />
-			<input
-				onChange={dateHandler}
-				type='date'
-				min={'2016-01-01'}
-				max={'2023-12-31'}
-				placeholder='Choose Date'
-			/>
+			<div>
+				<label>Item</label>
+				<input
+					onChange={itemHandler}
+					onInput={(e) => inputChangeHandler('item', e.target.value)}
+					type='text'
+					placeholder='Enter Item Name'
+				/>
+			</div>
+			<div>
+				<label>Price</label>
+				<input
+					onChange={priceHandler}
+					type='number'
+					placeholder='Enter Amount'
+					onInput={(e) => inputChangeHandler('price', e.target.value)}
+				/>
+			</div>
+			<div>
+				<label>Date</label>
+				<input
+					onChange={dateHandler}
+					type='date'
+					min={'2016-01-01'}
+					max={'2023-12-31'}
+					placeholder='Choose Date'
+					onInput={(e) => inputChangeHandler('date', e.target.value)}
+				/>
+			</div>
 			<button type='submit'>Add</button>
 		</form>
 	);
